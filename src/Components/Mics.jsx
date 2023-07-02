@@ -23,7 +23,7 @@ const Mics = () => {
                   Supply
                 </div>
                 <div className="text-yellow-500 text-[24px] font-normal leading-loose">
-                  100B
+                  8042000000
                 </div>
               </div>
               <div className="w-full h-5  bg-red-100 rounded-full justify-start items-center inline-flex">
@@ -36,7 +36,7 @@ const Mics = () => {
                   Tax
                 </div>
                 <div className="text-orange-600 text-[24px] font-normal leading-loose">
-                  0%
+                  1%
                 </div>
               </div>
               <div className="w-full h-5  bg-red-100 rounded-full justify-start items-center inline-flex">
@@ -46,10 +46,10 @@ const Mics = () => {
             <div className="flex flex-col gap-5">
               <div className="w-full h-8 justify-between items-start inline-flex">
                 <div className="text-white text-[24px] font-normal leading-loose">
-                  Max Wallet
+                  RoadMap?
                 </div>
                 <div className="text-emerald-500 text-[24px] font-normal leading-loose">
-                  2%
+                  1Billion Mc
                 </div>
               </div>
               <div className="w-full h-5  bg-red-100 rounded-full justify-start items-center inline-flex">

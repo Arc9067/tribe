@@ -23,25 +23,26 @@ const About = () => {
             <div className="justify-start items-center gap-5 inline-flex">
               <div className="w-2.5 h-20 relative bg-gradient-to-b from-amber-500 to-green-500" />
               <div className=" text-white text-[16px] font-normal leading-loose">
-                American dollar is loosing its value. Crypto Era is becoming
-                mainstream and there’s very chance that world adopts Ethereum as
-                the global leading{" "}
+                A tribe is a closely-knit community of people who share common
+                ancestry, culture, and language. They are bound together by a
+                strong sense of identity and belonging.
               </div>
             </div>
             <div className="justify-start items-center gap-5 inline-flex">
               <div className="w-2.5 h-20 relative bg-gradient-to-b from-blue-700 to-orange-400" />
               <div className=" text-white text-[16px] font-normal leading-loose">
-                American dollar is loosing its value. Crypto Era is becoming
-                mainstream and there’s very chance that world adopts Ethereum as
-                the global leading{" "}
+                Members of a tribe live in close proximity to each other and
+                rely on one another for support and cooperation. Their shared
+                language allows for effective communication and the transmission
+                of cultural knowledge and traditions from one generation to the
+                next.
               </div>
             </div>
             <div className="justify-start items-center gap-5 inline-flex">
               <div className="w-2.5 h-20 relative bg-gradient-to-b from-red-600 to-amber-400" />
               <div className=" text-white text-[16px] font-normal leading-loose">
-                American dollar is loosing its value. Crypto Era is becoming
-                mainstream and there’s very chance that world adopts Ethereum as
-                the global leading{" "}
+                In a tribe, individuals find strength and unity through their
+                shared heritage and cultural practices.
               </div>
             </div>
           </div>
