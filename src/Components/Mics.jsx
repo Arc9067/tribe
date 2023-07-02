@@ -5,13 +5,7 @@ import { FiCopy } from "react-icons/fi";
 const Mics = () => {
   return (
     <section className="py-12 w-full relative">
-      <div className="container">
-        <h1 className="text-yellow-50 text-6xl capitalize text-center lg:text-9xl font-titanOne">
-          tribemics
-        </h1>
-      </div>
-      <div className="container grid gap-14 lg:grid-cols-2 justify-center items-center mt-14">
-        <img src={Token} alt="" />
+      <div className="container grid gap-14 justify-center items-center mt-14">
         <article className="flex flex-col ">
           <h3 className="text-white text-2xl font-timmana">
             TOKEN SUPPLY: 1, 000, 000, 000
