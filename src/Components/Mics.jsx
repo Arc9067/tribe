@@ -1,5 +1,6 @@
 import React from "react";
 import Token from "../assets/token.png";
+import { FiCopy } from "react-icons/fi";
 
 const Mics = () => {
   return (
@@ -33,27 +34,26 @@ const Mics = () => {
             <div className="flex flex-col gap-5">
               <div className="w-full h-8 justify-between items-start inline-flex">
                 <div className="text-white text-[24px] font-normal leading-loose">
-                  Tax
+                  contract
                 </div>
-                <div className="text-orange-600 text-[24px] font-normal leading-loose">
-                  1%
+                <div
+                  className="text-orange-600 text-[24px] flex items-center gap-4 font-normal leading-loose"
+                  onClick={() => {
+                    navigator.clipboard
+                      .writeText("0x171e9FF7D35d9748b64B5ea3286600045638A1b1")
+                      .then(() => {
+                        alert("Contract Copied");
+                      })
+                      .catch((err) => {
+                        console.log(err);
+                      });
+                  }}
+                >
+                  <FiCopy /> 0x171e..............
                 </div>
               </div>
               <div className="w-full h-5  bg-red-100 rounded-full justify-start items-center inline-flex">
                 <div className="w-4/12 h-5 relative bg-blue-400 rounded-full" />
-              </div>
-            </div>
-            <div className="flex flex-col gap-5">
-              <div className="w-full h-8 justify-between items-start inline-flex">
-                <div className="text-white text-[24px] font-normal leading-loose">
-                  RoadMap?
-                </div>
-                <div className="text-emerald-500 text-[24px] font-normal leading-loose">
-                  1Billion Mc
-                </div>
-              </div>
-              <div className="w-full h-5  bg-red-100 rounded-full justify-start items-center inline-flex">
-                <div className="w-9/12 h-5 relative bg-emerald-500 rounded-full" />
               </div>
             </div>
           </div>
