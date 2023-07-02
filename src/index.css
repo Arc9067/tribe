@@ -1,0 +1,21 @@
+@import url("https://fonts.cdnfonts.com/css/freckle-face");
+@import url("https://fonts.cdnfonts.com/css/holtwood-one-sc");
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+@import url("https://fonts.cdnfonts.com/css/titan-one");
+@import url("https://fonts.cdnfonts.com/css/fredoka-one");
+@import url("https://fonts.cdnfonts.com/css/timmana");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  #hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 1)),
+      url(./assets/fire.png) bottom center no-repeat;
+    background-size: cover;
+  }
+  img {
+    @apply mx-auto;
+  }
+}
