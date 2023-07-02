@@ -8,7 +8,7 @@ const Mics = () => {
       <div className="container grid gap-14 justify-center items-center mt-14">
         <article className="flex flex-col ">
           <h3 className="text-white text-2xl font-timmana">
-            TOKEN SUPPLY: 1, 000, 000, 000
+            TOKEN SUPPLY: 8,042,000,000
           </h3>
 
           <div className="flex flex-col mt-10 gap-8 font-fredokaOne">
