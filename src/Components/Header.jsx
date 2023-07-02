@@ -5,21 +5,21 @@ const Header = () => {
   return (
     <header className="py-4 w-full absolute bg-black z-50 top-0 border-b border-white border-opacity-50 ">
       <nav className="container flex justify-between items-center">
-        <a href="" className="">
+        <a href="" className="no">
           <img src={Logo} alt="" />
         </a>
         <ul className="hidden lg:flex justify-between items-center gap-14 capitalize">
           <li className="hover:text-yellow-500 text-xl">
-            <a href=""> home</a>
+            <a href="no"> home</a>
           </li>
           <li className="hover:text-yellow-500 text-xl">
-            <a href=""> about</a>
+            <a href="no"> about</a>
           </li>
           <li className="hover:text-yellow-500 text-xl">
-            <a href=""> tokenomics</a>
+            <a href="no"> tokenomics</a>
           </li>
           <li className="hover:text-yellow-500 text-xl">
-            <a href=""> roadmap</a>
+            <a href="no"> roadmap</a>
           </li>
         </ul>
         <a

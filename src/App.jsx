@@ -11,7 +11,7 @@ const App = () => {
     document.querySelectorAll("img").forEach((ele) => {
       ele.setAttribute("loading", "lazy");
     });
-    document.querySelectorAll("a").forEach((anchor) => {
+    document.querySelectorAll("a:not(.no)").forEach((anchor) => {
       anchor.setAttribute("target", "_blank");
     });
   });
