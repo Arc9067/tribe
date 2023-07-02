@@ -47,7 +47,7 @@ const About = () => {
             </div>
           </div>
           <a
-            href=""
+            href="https://www.dextools.io/app/ru/ether/pair-explorer/0xd19B29e4216f64595D0CD267De16cc797Ea48acA"
             className="px-8 py-4 bg-yellow-500 shadow justify-center items-center gap-2.5 inline-flex text-xl capitalize hover:text-black font-titanOne"
           >
             live chart
