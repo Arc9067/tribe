@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import MainPage from "./Pages/MainPage";
 import Loader from "./Components/Loader";
 import Enter from "./assets/enter.png";
@@ -7,6 +7,14 @@ import secImg from "./assets/4.png";
 import thrImg from "./assets/5.png";
 
 const App = () => {
+  useEffect(() => {
+    document.querySelectorAll("img").forEach((ele) => {
+      ele.setAttribute("loading", "lazy");
+    });
+    document.querySelectorAll("a").forEach((anchor) => {
+      anchor.setAttribute("target", "_blank");
+    });
+  });
   const [isReady, setIsReady] = useState(false);
   const Loading = () => {
     return (
