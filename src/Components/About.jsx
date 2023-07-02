@@ -47,10 +47,10 @@ const About = () => {
             </div>
           </div>
           <a
-            href="https://www.dextools.io/app/ru/ether/pair-explorer/0xd19B29e4216f64595D0CD267De16cc797Ea48acA"
+            href="https://app.uniswap.org/#/swap?outputCurrency=0x171e9FF7D35d9748b64B5ea3286600045638A1b1"
             className="px-8 py-4 bg-yellow-500 shadow justify-center items-center gap-2.5 inline-flex text-xl capitalize hover:text-black font-titanOne"
           >
-            live chart
+            buy on uniswap
           </a>
         </article>
       </div>

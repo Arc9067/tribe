@@ -34,7 +34,7 @@ const Mics = () => {
             <div className="flex flex-col gap-5">
               <div className="w-full h-8 justify-between items-start inline-flex">
                 <div className="text-white text-[24px] font-normal leading-loose">
-                  contract
+                  CA
                 </div>
                 <div
                   className="text-orange-600 text-[24px] flex items-center gap-4 font-normal leading-loose"
