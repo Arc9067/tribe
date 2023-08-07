@@ -1,3 +1,4 @@
+import ScrollTrigger from "gsap/ScrollTrigger";
 import gsap from "gsap/dist/gsap";
 import { useLayoutEffect } from "react";
 import { useEffect } from "react";
@@ -10,14 +11,41 @@ export let heroTL = gsap.timeline({
   paused: true,
 });
 
+export let aboutTL = gsap.timeline({
+  
+})
+
 export function useAnimations(containerRef) {
   const q = gsap.utils.selector(containerRef);
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from(q('.about-text'), {
+      autoAlpha: 0,
+      x: 10,
+      stagger: 1,
+      scrollTrigger: {
+        trigger: '#about-wrapper',
+        start: 'top center'
+      }
+    })
+    gsap.from(q('.about-indicator'), {
+      clipPath: 'polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)',
+      stagger: 1,
+      scrollTrigger: {
+        trigger: '#about-wrapper',
+        start: 'top center'
+      }
+    })
+  }, [])
 
   useLayoutEffect(() => {
     gsap.set(q('.hero-text'), {
         autoAlpha: 1
     })
     gsap.set(q('.hero-image'), {
+        autoAlpha: 1
+    })
+    gsap.set(q('.about-text'), {
         autoAlpha: 1
     })
 
@@ -44,5 +72,7 @@ export function useAnimations(containerRef) {
           rotate: '12deg'
         }, "<"
       );
+
+     
   }, []);
 }
