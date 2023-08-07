@@ -15,7 +15,7 @@ const Footer = () => {
             Copyright © {new Date().getFullYear()} TRIBE. All Rights Reserved.
           </p>
           <div className="flex gap-5 items-center flex-wrap justify-center md:flex-nowrap">
-            <a href="https://t.me/TRIBE_ERC" className="hover:scale-90">
+            {/* <a href="https://t.me/TRIBE_ERC" className="hover:scale-90">
               <svg
                 width="66"
                 height="66"
@@ -50,7 +50,7 @@ const Footer = () => {
                   </clipPath>
                 </defs>
               </svg>
-            </a>
+            </a> */}
             <a
               href="https://etherscan.io/token/0x171e9ff7d35d9748b64b5ea3286600045638a1b1"
               className="hover:scale-90"
@@ -145,7 +145,7 @@ const Footer = () => {
                 </defs>
               </svg>
             </a>
-            <a
+            {/* <a
               href="https://twitter.com/warri0r_tribe"
               className="hover:scale-90"
             >
@@ -205,7 +205,7 @@ const Footer = () => {
                   stroke-width="1.36742"
                 />
               </svg>
-            </a>
+            </a> */}
             <a
               href="https://app.uniswap.org/#/swap?outputCurrency=0x171e9FF7D35d9748b64B5ea3286600045638A1b1"
               className="hover:scale-90"
