@@ -73,18 +73,18 @@ const Hero = () => {
         <img
           src={Hero1}
           alt=""
-          className="absolute top-0 left-0 w-16 lg:w-max"
+          className="absolute top-0 left-0 w-16 lg:w-max hero-image"
         />
         <img
           src={Hero2}
           alt=""
-          className="absolute top-10 right-0 w-14 lg:w-max"
+          className="absolute top-10 right-0 w-14 lg:w-max hero-image"
         />
-        <h2 className="text-white text-2xl font-ultra">Welcome To </h2>
-        <h1 className="text-yellow-50 text-7xl md:text-9xl font-titanOne">
+        <h2 className="text-white text-2xl font-ultra hero-text">Welcome To </h2>
+        <h1 className="text-yellow-50 text-7xl md:text-9xl font-titanOne hero-text">
           TRIBE
         </h1>
-        <img src={Logo} alt="" className="w-8/12 lg:w-max" />
+        <img src={Logo} alt="" className="w-8/12 lg:w-max hero-image" />
       </div>
     </section>
   );
