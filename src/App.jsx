@@ -5,8 +5,15 @@ import Enter from "./assets/enter.png";
 import firstImg from "./assets/3.png";
 import secImg from "./assets/4.png";
 import thrImg from "./assets/5.png";
+import { useLockBodyScroll } from "@uidotdev/usehooks";
+import { useRef } from "react";
+import gsap from "gsap/dist/gsap";
+import { heroTL, showMainTL, useAnimations } from "./utils/useAnimations.gsap";
+import useSmoothScroll from "./utils/useSmoothScroll";
 
 const App = () => {
+  const containerRef = useRef();
+  useAnimations(containerRef);
   useEffect(() => {
     document.querySelectorAll("img").forEach((ele) => {
       ele.setAttribute("loading", "lazy");
@@ -16,9 +23,14 @@ const App = () => {
     });
   });
   const [isReady, setIsReady] = useState(false);
+
+  // smooth scroll
+  useSmoothScroll()
+
   const Loading = () => {
+    useLockBodyScroll();
     return (
-      <div className="fixed z-[1000] h-screen w-full bg-black top-0 right-0 flex justify-center items-center">
+      <div className="fixed z-[1000] h-screen loader w-full bg-black top-0 right-0 flex justify-center items-center">
         <div className="h-screen w-full relative flex justify-center items-center">
           <svg
             width="356"
@@ -89,7 +101,12 @@ const App = () => {
 
           <button
             className="hover:scale-75 transition z-40"
-            onClick={() => setIsReady(true)}
+            onClick={() => {
+              showMainTL.play().then(() => {
+                setIsReady(true);
+                heroTL.play()
+              });
+            }}
           >
             <img src={Enter} alt="" />
           </button>
@@ -99,8 +116,13 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen w-full bg-black text-white font-freckleFace relative">
-      {isReady ? <MainPage /> : <Loading />}
+    <div
+      ref={containerRef}
+      className="min-h-screen w-full bg-black text-white font-freckleFace relative"
+    >
+      {!isReady && <Loading />}
+
+      <MainPage />
     </div>
   );
 };

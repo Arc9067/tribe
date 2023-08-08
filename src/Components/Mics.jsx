@@ -25,7 +25,7 @@ const Mics = () => {
                 <div className="w-11/12 h-5 relative bg-amber-300 rounded-full" />
               </div>
             </div>
-            <div className="flex flex-col gap-5">
+            {/* <div className="flex flex-col gap-5">
               <div className="w-full h-8 justify-between items-start inline-flex">
                 <div className="text-white text-[24px] font-normal leading-loose">
                   CA
@@ -49,7 +49,7 @@ const Mics = () => {
               <div className="w-full h-5  bg-red-100 rounded-full justify-start items-center inline-flex">
                 <div className="w-4/12 h-5 relative bg-blue-400 rounded-full" />
               </div>
-            </div>
+            </div> */}
           </div>
         </article>
       </div>
